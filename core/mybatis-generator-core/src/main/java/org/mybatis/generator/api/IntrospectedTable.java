@@ -1339,7 +1339,9 @@ public abstract class IntrospectedTable {
         sb.append(calculateJavaClientInterfacePackage());
         sb.append('.');
         sb.append(fullyQualifiedTable.getDomainObjectName());
-        sb.append("Mapper"); //$NON-NLS-1$
+//        sb.append("Mapper"); //$NON-NLS-1$
+        //wzw 修改
+        sb.append("Dao"); //$NON-NLS-1$
         setMyBatis3JavaMapperType(sb.toString());
 
         sb.setLength(0);
@@ -1383,6 +1385,8 @@ public abstract class IntrospectedTable {
         sb.append(pakkage);
         sb.append('.');
         sb.append(fullyQualifiedTable.getDomainObjectName());
+        //wzw 修改
+        sb.append("Po"); //$NON-NLS-1$
         setBaseRecordType(sb.toString());
 
         sb.setLength(0);
@@ -1438,9 +1442,13 @@ public abstract class IntrospectedTable {
      */
     protected String calculateMyBatis3XmlMapperFileName() {
         StringBuilder sb = new StringBuilder();
-        sb.append(fullyQualifiedTable.getDomainObjectName());
-        sb.append("Mapper.xml"); //$NON-NLS-1$
+//        sb.append(fullyQualifiedTable.getDomainObjectName());
+//        sb.append("Mapper.xml"); //$NON-NLS-1$
+//        return sb.toString();
+        sb.append(fullyQualifiedTable.getIntrospectedTableName()); //$NON-NLS-1$ wzw 修改
+        sb.append(".xml"); //$NON-NLS-1$
         return sb.toString();
+
     }
 
     /**

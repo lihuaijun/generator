@@ -193,6 +193,11 @@ public class DefaultCommentGenerator implements CommentGenerator {
         sb.append(introspectedTable.getFullyQualifiedTable());
         innerClass.addJavaDocLine(sb.toString());
 
+        sb.setLength(0);
+        sb.append(" * This class corresponds to the database table "); //$NON-NLS-1$
+        sb.append(introspectedTable.getFullyQualifiedTable());
+        innerClass.addJavaDocLine(sb.toString());
+
         addJavadocTag(innerClass, false);
 
         innerClass.addJavaDocLine(" */"); //$NON-NLS-1$
@@ -311,6 +316,11 @@ public class DefaultCommentGenerator implements CommentGenerator {
 
         sb.append(" * This field corresponds to the database table "); //$NON-NLS-1$
         sb.append(introspectedTable.getFullyQualifiedTable());
+        field.addJavaDocLine(sb.toString());
+
+        sb.setLength(0);
+        sb.append(" * "); //$NON-NLS-1$
+        sb.append(introspectedTable.getRemarks());
         field.addJavaDocLine(sb.toString());
 
         addJavadocTag(field, false);

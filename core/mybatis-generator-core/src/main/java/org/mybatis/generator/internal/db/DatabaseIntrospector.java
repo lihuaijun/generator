@@ -27,6 +27,7 @@ import static org.mybatis.generator.internal.util.messages.Messages.getString;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -747,6 +748,16 @@ public class DatabaseIntrospector {
                 introspectedTable.setTableType(tableType);
             }
             closeResultSet(rs);
+
+            if ("".equals(introspectedTable.getRemarks())) {
+                Statement stmt = databaseMetaData.getConnection().createStatement();
+                rs = stmt.executeQuery("SHOW TABLE STATUS LIKE '" + fqt.getIntrospectedTableName() + "'");
+                while (rs.next()) {
+                    introspectedTable.setRemarks(rs.getString("COMMENT"));
+                }
+                closeResultSet(rs);
+                stmt.close();
+            }
         } catch (SQLException e) {
             warnings.add(getString("Warning.27", e.getMessage())); //$NON-NLS-1$
         }
