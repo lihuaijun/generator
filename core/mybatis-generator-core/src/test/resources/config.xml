@@ -9,6 +9,11 @@
     <context id="gipDB2Tables" targetRuntime="MyBatis3" defaultModelType="flat">
         <property name="javaFileEncoding" value="UTF-8"/>
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+        <plugin type="org.mybatis.generator.plugins.SelectAllPlugin" />
+        <plugin type="org.mybatis.generator.plugins.MyRenamePlugin" >
+            <property name="searchString" value="ByPrimaryKey" />
+            <property name="replaceString" value="" />
+        </plugin>
         <!-- 注释 -->
         <commentGenerator type="org.mybatis.generator.internal.GameleyCommentGenerator">
             <!-- 是否生成注释代时间戳-->
@@ -33,6 +38,7 @@
             <property name="enableSubPackages" value="false"/>
             <!-- 是否针对string类型的字段在set的时候进行trim调用 -->
             <property name="trimStrings" value="true"/>
+            <property name="defaultModelType" value="hierarchical"/>
         </javaModelGenerator>
         <!-- 生成的映射文件包名和位置 -->
         <sqlMapGenerator targetPackage="${package.xml}" targetProject="${path.reim.xml}">
@@ -44,7 +50,8 @@
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <table tableName="${reim.table.name}" domainObjectName="${reim.domain.name}" enableCountByExample="false"
-               enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+               enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"
+               >
             <property name="useActualColumnNames" value="false"/>
             <generatedKey column="${reim.table.primarykey}" sqlStatement="JDBC" identity="true" type="post"/>
             <!-- schema即为数据库名 tableName为对应的数据库表 domainObjectName是要生成的实体类 enable*ByExample
