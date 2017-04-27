@@ -282,13 +282,18 @@ public class MyBatisGenerator {
             projects.add(gjf.getTargetProject());
 
             File targetFile;
-            String source;
+            String source = null;
             try {
                 File directory = shellCallback.getDirectory(gjf
                         .getTargetProject(), gjf.getTargetPackage());
                 targetFile = new File(directory, gjf.getFileName());
                 if (targetFile.exists()) {
-                    if (shellCallback.isMergeSupported()) {
+                    if (gjf.getFileName().endsWith("Po.java")) {
+                        source = gjf.getFormattedContent();
+                        warnings.add(getString("Warning.11", //$NON-NLS-1$
+                                targetFile.getAbsolutePath()));
+                    }
+                    /*if (shellCallback.isMergeSupported()) {
                         source = shellCallback.mergeJavaFile(gjf
                                 .getFormattedContent(), targetFile
                                 .getAbsolutePath(),
@@ -304,7 +309,7 @@ public class MyBatisGenerator {
                                 .getFileName());
                         warnings.add(getString(
                                 "Warning.2", targetFile.getAbsolutePath())); //$NON-NLS-1$
-                    }
+                    }*/
                 } else {
                     source = gjf.getFormattedContent();
                 }
@@ -312,7 +317,9 @@ public class MyBatisGenerator {
                 callback.checkCancel();
                 callback.startTask(getString(
                         "Progress.15", targetFile.getName())); //$NON-NLS-1$
-                writeFile(targetFile, source, gjf.getFileEncoding());
+                if (source != null) {
+                    writeFile(targetFile, source, gjf.getFileEncoding());
+                }
             } catch (ShellException e) {
                 warnings.add(e.getMessage());
             }

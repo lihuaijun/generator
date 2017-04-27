@@ -32,7 +32,7 @@ import java.util.List;
 public class MyBatisGeneratorMain {
     public static void main(String[] args) {
         List<String> warnings = new ArrayList<>();
-        boolean overwrite = true;
+        boolean overwrite = false;
         boolean merge = false;
         File configurationFile = new File(MyBatisGeneratorMain.class.getResource("/config.xml").getPath());
         ConfigurationParser cp = new ConfigurationParser(warnings);

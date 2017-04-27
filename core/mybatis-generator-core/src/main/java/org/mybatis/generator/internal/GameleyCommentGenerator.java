@@ -67,13 +67,14 @@ public class GameleyCommentGenerator implements CommentGenerator {
      * 这块注释可以自由发挥，根据各自公司的情况来设定，位置的po和dao的最上方
      */
     public void addJavaFileComment(CompilationUnit compilationUnit) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
         compilationUnit.addFileCommentLine("/*");
         compilationUnit.addFileCommentLine(" * " + compilationUnit.getType().getShortName() + ".java");
-        compilationUnit.addFileCommentLine(" * Copyright(C) 2016 华夏乐游");
+        compilationUnit.addFileCommentLine(" * Copyright(C) " + sdf.format(new Date()) + " 华夏乐游");
         compilationUnit.addFileCommentLine(" * All rights reserved.");
         compilationUnit.addFileCommentLine(" * -----------------------------------------------");
-        compilationUnit.addFileCommentLine(" * " + sdf.format(new Date()) + " Created");
+//        compilationUnit.addFileCommentLine(" * " + sdf.format(new Date()) + " Created");
         compilationUnit.addFileCommentLine(" */");
     }
 

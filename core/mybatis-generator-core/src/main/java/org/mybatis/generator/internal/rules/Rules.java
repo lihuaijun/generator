@@ -175,6 +175,16 @@ public interface Rules {
     boolean generateSelectByPrimaryKey();
 
     /**
+     * Implements the rule for generating the select all
+     * SQL Map element and DAO method. If the selectAll statement is
+     * allowed, then generate the element and method.
+     *
+     * @return true if the element and method should be generated
+     * add by lhj
+     */
+//    boolean generateSelectAll();
+
+    /**
      * Implements the rule for generating the select by example without BLOBs
      * SQL Map element and DAO method. If the selectByExample statement is
      * allowed, then generate the element and method.

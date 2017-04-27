@@ -6,6 +6,196 @@
     <properties resource="config.properties"/>
     <!-- 数据库驱动包位置 -->
     <classPathEntry  location="E:/m2/repository/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar"/>
+    <classPathEntry  location="E:/mydev/jar/activation-1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/ant-1.6.5.jar"/>
+    <classPathEntry  location="E:/mydev/jar/ant-1.9.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/ant-launcher-1.9.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/antlr-2.7.7.jar"/>
+    <classPathEntry  location="E:/mydev/jar/antlr-runtime-3.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/aopalliance-1.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/apacheds-i18n-2.0.0-M15.jar"/>
+    <classPathEntry  location="E:/mydev/jar/apacheds-kerberos-codec-2.0.0-M15.jar"/>
+    <classPathEntry  location="E:/mydev/jar/api-asn1-api-1.0.0-M20.jar"/>
+    <classPathEntry  location="E:/mydev/jar/api-util-1.0.0-M20.jar"/>
+    <classPathEntry  location="E:/mydev/jar/asm-3.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/asm-commons-3.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/asm-tree-3.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/avro-1.7.7.jar"/>
+    <classPathEntry  location="E:/mydev/jar/bonecp-0.8.0.RELEASE.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-beanutils-1.7.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-beanutils-core-1.8.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-cli-1.2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-codec-1.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-collections-3.2.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-compress-1.9.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-configuration-1.6.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-daemon-1.0.13.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-dbcp-1.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-digester-1.8.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-el-1.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-httpclient-3.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-io-2.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-lang-2.6.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-lang3-3.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-logging-1.2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-math-2.2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-math3-3.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-net-3.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/commons-pool-1.5.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/curator-client-2.6.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/curator-framework-2.6.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/curator-recipes-2.6.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/datanucleus-api-jdo-4.2.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/datanucleus-core-4.1.6.jar"/>
+    <classPathEntry  location="E:/mydev/jar/datanucleus-rdbms-4.1.7.jar"/>
+    <classPathEntry  location="E:/mydev/jar/derby-10.10.2.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/disruptor-3.3.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/dropwizard-metrics-hadoop-metrics2-reporter-0.1.2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/fastutil-6.5.6.jar"/>
+    <classPathEntry  location="E:/mydev/jar/findbugs-annotations-1.3.9-1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/geronimo-annotation_1.0_spec-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/geronimo-jaspic_1.0_spec-1.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/geronimo-jta_1.1_spec-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/gson-2.2.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/guava-14.0.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/guice-3.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/guice-assistedinject-3.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/guice-servlet-3.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-annotations-2.6.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-auth-2.5.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-client-2.7.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-common-2.6.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-hdfs-2.6.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-mapreduce-client-app-2.7.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-mapreduce-client-common-2.7.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-mapreduce-client-core-2.5.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-mapreduce-client-jobclient-2.7.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-mapreduce-client-shuffle-2.7.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-yarn-api-2.6.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-yarn-common-2.5.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-yarn-registry-2.7.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-yarn-server-applicationhistoryservice-2.6.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-yarn-server-common-2.6.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-yarn-server-resourcemanager-2.6.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hadoop-yarn-server-web-proxy-2.6.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-annotations-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-client-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-common-1.1.1-tests.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-common-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-hadoop-compat-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-hadoop2-compat-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-prefix-tree-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-procedure-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-protocol-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hbase-server-1.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-common-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-jdbc-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-llap-client-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-llap-common-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-llap-server-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-llap-tez-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-metastore-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-orc-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-serde-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-service-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-service-rpc-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-shims-0.23-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-shims-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-shims-common-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-shims-scheduler-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/hive-storage-api-2.1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/htrace-core-3.0.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/htrace-core-3.1.0-incubating.jar"/>
+    <classPathEntry  location="E:/mydev/jar/httpclient-4.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/httpcore-4.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jackson-annotations-2.4.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jackson-core-2.4.2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jackson-core-asl-1.9.13.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jackson-databind-2.4.2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jackson-jaxrs-1.9.13.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jackson-mapper-asl-1.9.13.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jackson-xc-1.9.13.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jamon-runtime-2.3.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jasper-compiler-5.5.23.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jasper-runtime-5.5.23.jar"/>
+    <classPathEntry  location="E:/mydev/jar/java-xmlbuilder-0.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/javax.inject-1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/javax.jdo-3.2.0-m3.jar"/>
+    <classPathEntry  location="E:/mydev/jar/javax.servlet-3.0.0.v201112011016.jar"/>
+    <classPathEntry  location="E:/mydev/jar/javolution-5.5.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jaxb-api-2.2.2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jaxb-impl-2.2.3-1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jcodings-1.0.8.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jcommander-1.30.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jdo-api-3.0.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jersey-client-1.9.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jersey-core-1.9.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jersey-guice-1.9.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jersey-json-1.9.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jersey-server-1.9.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jets3t-0.9.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jettison-1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jetty-6.1.26.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jetty-all-7.6.0.v20120127.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jetty-sslengine-6.1.26.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jetty-util-6.1.26.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jline-0.9.94.jar"/>
+    <classPathEntry  location="E:/mydev/jar/joda-time-2.5.jar"/>
+    <classPathEntry  location="E:/mydev/jar/joni-2.1.2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jpam-1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jsch-0.1.42.jar"/>
+    <classPathEntry  location="E:/mydev/jar/json-20090211.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jsp-2.1-6.1.14.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jsp-api-2.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jsp-api-2.1-6.1.14.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jsp-api-2.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jsr305-3.0.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/jta-1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/leveldbjni-all-1.8.jar"/>
+    <classPathEntry  location="E:/mydev/jar/libfb303-0.9.3.jar"/>
+    <classPathEntry  location="E:/mydev/jar/libthrift-0.9.3.jar"/>
+    <classPathEntry  location="E:/mydev/jar/log4j-1.2-api-2.4.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/log4j-1.2.16.jar"/>
+    <classPathEntry  location="E:/mydev/jar/log4j-api-2.4.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/log4j-core-2.4.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/log4j-slf4j-impl-2.4.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/log4j-web-2.4.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/mail-1.4.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/metrics-core-2.2.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/metrics-core-3.1.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/metrics-json-3.1.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/metrics-jvm-3.1.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/mysql-connector-java-5.1.14.jar"/>
+    <classPathEntry  location="E:/mydev/jar/netty-3.7.0.Final.jar"/>
+    <classPathEntry  location="E:/mydev/jar/netty-all-4.0.23.Final.jar"/>
+    <classPathEntry  location="E:/mydev/jar/opencsv-2.3.jar"/>
+    <classPathEntry  location="E:/mydev/jar/paranamer-2.3.jar"/>
+    <classPathEntry  location="E:/mydev/jar/parquet-hadoop-bundle-1.8.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/protobuf-java-2.5.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/servlet-api-2.4.jar"/>
+    <classPathEntry  location="E:/mydev/jar/servlet-api-2.5-6.1.14.jar"/>
+    <classPathEntry  location="E:/mydev/jar/slf4j-api-1.7.10.jar"/>
+    <classPathEntry  location="E:/mydev/jar/slf4j-log4j12-1.6.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/slider-core-0.90.2-incubating.jar"/>
+    <classPathEntry  location="E:/mydev/jar/snappy-0.2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/snappy-java-1.0.5.jar"/>
+    <classPathEntry  location="E:/mydev/jar/stax-api-1.0-2.jar"/>
+    <classPathEntry  location="E:/mydev/jar/stringtemplate-3.2.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/tephra-api-0.6.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/tephra-core-0.6.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/tephra-hbase-compat-1.0-0.6.0.jar"/>
+    <classPathEntry  location="E:/mydev/jar/transaction-api-1.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/twill-api-0.6.0-incubating.jar"/>
+    <classPathEntry  location="E:/mydev/jar/twill-common-0.6.0-incubating.jar"/>
+    <classPathEntry  location="E:/mydev/jar/twill-core-0.6.0-incubating.jar"/>
+    <classPathEntry  location="E:/mydev/jar/twill-discovery-api-0.6.0-incubating.jar"/>
+    <classPathEntry  location="E:/mydev/jar/twill-discovery-core-0.6.0-incubating.jar"/>
+    <classPathEntry  location="E:/mydev/jar/twill-zookeeper-0.6.0-incubating.jar"/>
+    <classPathEntry  location="E:/mydev/jar/xercesImpl-2.9.1.jar"/>
+    <classPathEntry  location="E:/mydev/jar/xml-apis-1.3.04.jar"/>
+    <classPathEntry  location="E:/mydev/jar/xmlenc-0.52.jar"/>
+    <classPathEntry  location="E:/mydev/jar/zookeeper-3.4.6.jar"/>
+
     <context id="gipDB2Tables" targetRuntime="MyBatis3" defaultModelType="flat">
         <property name="javaFileEncoding" value="UTF-8"/>
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
@@ -14,6 +204,18 @@
             <property name="searchString" value="ByPrimaryKey" />
             <property name="replaceString" value="" />
         </plugin>
+        <!--<plugin type="org.mybatis.generator.plugins.BeanBuilderPlugin">
+            <property name="targetPackage" value="${package.beanBuilder}" />
+            <property name="targetProject" value="${targetProject.java}" />
+        </plugin>-->
+       <!-- <plugin
+                type="org.mybatis.generator.plugins.MapperConfigPlugin">
+            <property name="fileName" value="GeneratedMapperConfig.xml" />
+            <property name="targetPackage"
+                      value="${package.dao}" />
+            <property name="targetProject" value="${path.reim.java}" />
+        </plugin>-->
+
         <!-- 注释 -->
         <commentGenerator type="org.mybatis.generator.internal.GameleyCommentGenerator">
             <!-- 是否生成注释代时间戳-->
@@ -33,7 +235,7 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 生成模型的包名和位置 -->
-        <javaModelGenerator targetPackage="${package.entity}" targetProject="${path.reim.java}">
+        <javaModelGenerator targetPackage="${package.entity}" targetProject="${targetProject.java}">
             <!-- 是否在当前路径下新加一层schema,eg：fase路径com.oop.eksp.user.model， true:com.oop.eksp.user.model.[schemaName] -->
             <property name="enableSubPackages" value="false"/>
             <!-- 是否针对string类型的字段在set的时候进行trim调用 -->
@@ -41,19 +243,19 @@
             <property name="defaultModelType" value="hierarchical"/>
         </javaModelGenerator>
         <!-- 生成的映射文件包名和位置 -->
-        <sqlMapGenerator targetPackage="${package.xml}" targetProject="${path.reim.xml}">
+        <sqlMapGenerator targetPackage="${package.xml}" targetProject="${targetProject.xml}">
             <!-- 同上-->
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!-- 生成DAO的包名和位置 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="${package.dao}" targetProject="${path.reim.java}">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="${package.dao}" targetProject="${targetProject.java}">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
-        <table tableName="${reim.table.name}" domainObjectName="${reim.domain.name}" enableCountByExample="false"
+        <table tableName="${table.name}" domainObjectName="${domain.name}" enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"
                >
             <property name="useActualColumnNames" value="false"/>
-            <generatedKey column="${reim.table.primarykey}" sqlStatement="JDBC" identity="true" type="post"/>
+            <generatedKey column="${table.primarykey}" sqlStatement="JDBC" identity="true" type="post"/>
             <!-- schema即为数据库名 tableName为对应的数据库表 domainObjectName是要生成的实体类 enable*ByExample
                 是否生成 example类   -->
             <!-- 忽略列，不生成bean 字段 -->

@@ -15,43 +15,29 @@
  */
 package org.mybatis.generator.internal.db;
 
-import static org.mybatis.generator.internal.util.JavaBeansUtil.getCamelCaseString;
-import static org.mybatis.generator.internal.util.JavaBeansUtil.getValidPropertyName;
-import static org.mybatis.generator.internal.util.StringUtility.composeFullyQualifiedTableName;
-import static org.mybatis.generator.internal.util.StringUtility.isTrue;
-import static org.mybatis.generator.internal.util.StringUtility.stringContainsSQLWildcard;
-import static org.mybatis.generator.internal.util.StringUtility.stringContainsSpace;
-import static org.mybatis.generator.internal.util.StringUtility.stringHasValue;
-import static org.mybatis.generator.internal.util.messages.Messages.getString;
-
-import java.sql.DatabaseMetaData;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.StringTokenizer;
-import java.util.TreeMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.mybatis.generator.api.FullyQualifiedTable;
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.JavaTypeResolver;
 import org.mybatis.generator.api.dom.java.FullyQualifiedJavaType;
 import org.mybatis.generator.api.dom.java.JavaReservedWords;
-import org.mybatis.generator.config.ColumnOverride;
-import org.mybatis.generator.config.Context;
-import org.mybatis.generator.config.GeneratedKey;
-import org.mybatis.generator.config.PropertyRegistry;
-import org.mybatis.generator.config.TableConfiguration;
+import org.mybatis.generator.config.*;
 import org.mybatis.generator.internal.ObjectFactory;
 import org.mybatis.generator.logging.Log;
 import org.mybatis.generator.logging.LogFactory;
+
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import static org.mybatis.generator.internal.util.JavaBeansUtil.getCamelCaseString;
+import static org.mybatis.generator.internal.util.JavaBeansUtil.getValidPropertyName;
+import static org.mybatis.generator.internal.util.StringUtility.*;
+import static org.mybatis.generator.internal.util.messages.Messages.getString;
 
 /**
  * The Class DatabaseIntrospector.
@@ -531,33 +517,41 @@ public class DatabaseIntrospector {
         String localSchema;
         String localTableName;
 
-        boolean delimitIdentifiers = tc.isDelimitIdentifiers()
-                || stringContainsSpace(tc.getCatalog())
-                || stringContainsSpace(tc.getSchema())
-                || stringContainsSpace(tc.getTableName());
+        localCatalog = tc.getCatalog();
+        localSchema = tc.getSchema();
+        localTableName = tc.getTableName();
 
-        if (delimitIdentifiers) {
-            localCatalog = tc.getCatalog();
-            localSchema = tc.getSchema();
-            localTableName = tc.getTableName();
-        } else if (databaseMetaData.storesLowerCaseIdentifiers()) {
-            localCatalog = tc.getCatalog() == null ? null : tc.getCatalog()
-                    .toLowerCase();
-            localSchema = tc.getSchema() == null ? null : tc.getSchema()
-                    .toLowerCase();
-            localTableName = tc.getTableName() == null ? null : tc
-                    .getTableName().toLowerCase();
-        } else if (databaseMetaData.storesUpperCaseIdentifiers()) {
-            localCatalog = tc.getCatalog() == null ? null : tc.getCatalog()
-                    .toUpperCase();
-            localSchema = tc.getSchema() == null ? null : tc.getSchema()
-                    .toUpperCase();
-            localTableName = tc.getTableName() == null ? null : tc
-                    .getTableName().toUpperCase();
-        } else {
-            localCatalog = tc.getCatalog();
-            localSchema = tc.getSchema();
-            localTableName = tc.getTableName();
+        try {
+            boolean delimitIdentifiers = tc.isDelimitIdentifiers()
+                    || stringContainsSpace(tc.getCatalog())
+                    || stringContainsSpace(tc.getSchema())
+                    || stringContainsSpace(tc.getTableName());
+
+            if (delimitIdentifiers) {
+                localCatalog = tc.getCatalog();
+                localSchema = tc.getSchema();
+                localTableName = tc.getTableName();
+            } else if (databaseMetaData.storesLowerCaseIdentifiers()) {
+                localCatalog = tc.getCatalog() == null ? null : tc.getCatalog()
+                        .toLowerCase();
+                localSchema = tc.getSchema() == null ? null : tc.getSchema()
+                        .toLowerCase();
+                localTableName = tc.getTableName() == null ? null : tc
+                        .getTableName().toLowerCase();
+            } else if (databaseMetaData.storesUpperCaseIdentifiers()) {
+                localCatalog = tc.getCatalog() == null ? null : tc.getCatalog()
+                        .toUpperCase();
+                localSchema = tc.getSchema() == null ? null : tc.getSchema()
+                        .toUpperCase();
+                localTableName = tc.getTableName() == null ? null : tc
+                        .getTableName().toUpperCase();
+            } else {
+                localCatalog = tc.getCatalog();
+                localSchema = tc.getSchema();
+                localTableName = tc.getTableName();
+            }
+        }catch (Exception e) {
+//            e.printStackTrace();
         }
 
         if (tc.isWildcardEscapingEnabled()) {

@@ -314,6 +314,23 @@ public abstract class BaseRules implements Rules {
     }
 
     /**
+     * Implements the rule for generating the select all SQL Map
+     * element and DAO method.
+     *
+     * @return true if the element and method should be generated
+     * add by lhj
+     */
+//    public boolean generateSelectAll() {
+//        if (isModelOnly) {
+//            return false;
+//        }
+//
+//        boolean rc = tableConfiguration.isSelectAllStatementEnabled();
+//
+//        return rc;
+//    }
+
+    /**
      * Implements the rule for generating the select by example without BLOBs
      * SQL Map element and DAO method. If the selectByExample statement is
      * allowed, then generate the element and method.
@@ -443,8 +460,9 @@ public abstract class BaseRules implements Rules {
             return false;
         }
         
-        return generateSelectByPrimaryKey()
-                || generateSelectByExampleWithoutBLOBs();
+//        return generateSelectByPrimaryKey()
+//                || generateSelectByExampleWithoutBLOBs();
+        return true;
     }
 
     /* (non-Javadoc)

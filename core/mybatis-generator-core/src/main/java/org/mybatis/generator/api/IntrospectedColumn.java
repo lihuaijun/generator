@@ -15,12 +15,12 @@
  */
 package org.mybatis.generator.api;
 
-import java.sql.Types;
-import java.util.Properties;
-
 import org.mybatis.generator.api.dom.java.FullyQualifiedJavaType;
 import org.mybatis.generator.config.Context;
 import org.mybatis.generator.internal.util.StringUtility;
+
+import java.sql.Types;
+import java.util.Properties;
 
 /**
  * This class holds information about an introspected column. The class has
@@ -157,7 +157,8 @@ public class IntrospectedColumn {
 
         return "BINARY".equals(typeName) || "BLOB".equals(typeName) //$NON-NLS-1$ //$NON-NLS-2$
                 || "CLOB".equals(typeName) || "LONGNVARCHAR".equals(typeName) //$NON-NLS-1$ //$NON-NLS-2$ 
-                || "LONGVARBINARY".equals(typeName) || "LONGVARCHAR".equals(typeName) //$NON-NLS-1$ //$NON-NLS-2$
+                || "LONGVARBINARY".equals(typeName)
+//                || "LONGVARCHAR".equals(typeName) //$NON-NLS-1$ //$NON-NLS-2$ //对text等类型的字段不再按blob处理
                 || "NCLOB".equals(typeName) || "VARBINARY".equals(typeName); //$NON-NLS-1$ //$NON-NLS-2$ 
     }
 
